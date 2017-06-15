@@ -58,21 +58,21 @@ export const Router = TabNavigator({
         screen: UsersStack,
         navigationOptions: {
             tabBarLabel: 'Users',
-            tabBarIcon: ({ tintColor }) => <Icon name='account-circle' size={30} color={tintColor} / >
+            tabBarIcon: ({ tintColor }) => <Icon name='account-circle' size={30} color={tintColor} />
         }
     },
     ScrollTabBar: {
         screen: ScrollTabBar,
         navigationOptions: {
             tabBarLabel: 'Scroll',
-            tabBarIcon: ({ tintColor }) => <Icon name='details' size={30} color={tintColor} / >
+            tabBarIcon: ({ tintColor }) => <Icon name='details' size={30} color={tintColor} />
         }
     },
     Settings: {
         screen: SettingsStack,
         navigationOptions: {
             tabBarLabel: 'Components',
-            tabBarIcon: ({ tintColor }) => <Icon name='notifications' size={30} color={tintColor} / >
+            tabBarIcon: ({ tintColor }) => <Icon name='notifications' size={30} color={tintColor} />
         }
     }
 })

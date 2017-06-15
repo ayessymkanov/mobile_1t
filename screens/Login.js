@@ -65,7 +65,7 @@ export default class Login extends React.Component {
                     <Text style={styles.logoText}>Hello world</Text>
                 </View>
                 {this.state.error && <Text style={styles.errorMsg}>Wrong email or password. Please try again</Text>}
-                {this.state.loading && <ActivityIndicator size='large' />}
+                {this.state.loading && <ActivityIndicator size={0} />}
                 {!this.state.loading && <View style={styles.formContainer}>
                     <TextInput
                         style={styles.input}

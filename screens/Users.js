@@ -43,7 +43,6 @@ export default class Users extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-            {this.state.loading ? <ActivityIndicator style={styles.loader} size={0} color='#4a4aaa' /> :
                 <List style={styles.list}>
                     <FlatList
                         data={this.state.data}
@@ -60,7 +59,7 @@ export default class Users extends React.Component {
                         refreshing={this.state.refreshing}
                         onRefresh={this.handleRefresh}
                      />
-                </List>}
+                </List>
             </View>
         )
     }

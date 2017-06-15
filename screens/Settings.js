@@ -133,7 +133,7 @@ export default class Settings extends React.Component {
 
 
     handleSignout = () => {
-        this.props.navigation.goBack()
+        this.props.screenProps.rootNavigation.navigate('Login')
         this.signout()
     }
 
